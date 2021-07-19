@@ -6,7 +6,7 @@ Restart=on-abnormal
 StartLimitInterval=14400
 StartLimitBurst=10
 RestartSec=1
-ExecStart=/usr/local/bin/pi-stats -s 1
+ExecStart=/usr/local/bin/pi-stats -s 10
 StandardOutput=append:/var/log/pi-stats.log
 StandardError=syslog
 
