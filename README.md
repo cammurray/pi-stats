@@ -2,6 +2,8 @@
 `pi-stats` reads stats from a Raspberry Pi's VideoCore processor and writes them
 to stdout using InfluxDB's line protocol[0].
 
+Based on ericlagergren's pi-stats https://github.com/ericlagergren/pi-stats including pull request from hancockks for throttling information. In addition the stepping has been delayed from 1 second to 10 seconds by default to reduce unnecessary I/O to the Pi's SD card.
+
 ## Installing
 
 To have everything installed for you, run `make all`. You'll likely need root
