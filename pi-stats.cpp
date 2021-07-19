@@ -368,7 +368,7 @@ const struct option long_opts[] = {{"step", required_argument, NULL, 's'},
                                    {NULL, 0, NULL, 0}};
 
 int main(int argc, char* argv[]) {
-    auto step = 1s;
+    auto step = 10s;
 
     int ch;
     while ((ch = getopt_long(argc, argv, "s:h", long_opts, NULL)) != -1) {
